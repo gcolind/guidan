@@ -7,7 +7,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css"><!-- Custom css styles -->
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'><!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<title>Bootstrap-Starter</title>
+	<title>Guidan</title>
 </head>
 
 <body>
@@ -16,7 +16,11 @@
 <header>
 	<div class="container">
 		<div class="text-center">
-			<h1>Guidan</h1><hr>
+			<h1>Guidan</h1>
+			<p>Using Guidan is simple. Just type the task you want to complete in the text area below, then hit enter or click the 'Add Task' button.  Bam, you
+					now have things to do.  When you complete a task just check the box on the left of the page, and the task will be marked as
+					complete.  That's all there is to it!</p>
+			<hr>
 		</div>
 	</div>
 </header>
@@ -37,11 +41,24 @@
 	<div class="container">
 		<div class="text-center">
 			<input type="text" id="userDone">
-			<input type="submit" value="Add New Task" onClick="addTask()" id="taskAddButton">
+			<input type="submit" class="btn" value="Add Task" onClick="addTask()" id="taskAddButton">
 		</div>
 	</div>
 </section>
 <!-- End To Do List User Control -->
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<p class="text-center">Made by Colin Gallagher &copy;2014</p>
+		<div class="footer-social text-center">
+			<a href="https://twitter.com/eonwe_maia" ><i class="fa fa-twitter fa-3x"></i></a>
+			<a href="https://github.com/gcolind" ><i class="fa fa-github fa-3x"></i></a>
+			<a href="http://instagram.com/colindgall" ><i class="fa fa-instagram fa-3x"></i></a>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -50,6 +67,7 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> <!-- Bootstrap Core Javascript -->
 <script src="js/app.js"></script><!-- Custom Javascript -->
 
+<!-- jQuery for on Enter adding -->
 <script>
 	$("#userDone").keyup(function(event){
 	    if(event.keyCode == 13){
@@ -57,6 +75,7 @@
 	    }
 	});
 </script>
+<!-- End jQuery for on Enter adding -->
 
 </body>
 </html>
